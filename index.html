@@ -11,6 +11,19 @@
     max-width:70%;
     display:block;
     margin:0 auto 20px auto;
+        <div class="lang-selector">
+
+<button onclick="setLang('fr')">🇫🇷 FR</button>
+
+<button onclick="setLang('en')">🇬🇧 EN</button>
+
+<button onclick="setLang('de')">🇩🇪 DE</button>
+
+<button onclick="setLang('it')">🇮🇹 IT</button>
+
+<button onclick="setLang('es')">🇪🇸 ES</button>
+
+</div>
 }
 body{
     margin:0;
@@ -88,6 +101,25 @@ footer{
     color:#666;
     font-size:14px;
 }
+    .lang-selector{
+    text-align:center;
+    margin:20px 0;
+}
+
+.lang-selector button{
+    background:#0b2d5c;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    margin:3px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.lang-selector button:hover{
+    background:#144b93;
+}
 </style>
 
 </head>
@@ -158,7 +190,7 @@ Merci de stationner le véhicule uniquement dans l'une des rues ci-dessous.
 <li>56 Rue des Tournelles (petit parking)</li>
 Toutes les rues indiquées ci-dessus sont situées à Ville-la-Grand.
 
-<a class="button" href="https://www.google...">
+<a class="button" href="https://www.google.com/maps/search/?api=1&query=Rue+des+Tournelles,+Ville-la-Grand"
 📍 Ouvrir l'itinéraire
 </a>
 
@@ -201,5 +233,6 @@ Cette page est destinée à faciliter la restitution de votre véhicule.
 
 </div>
 
+</body>
 </body>
 </html>
