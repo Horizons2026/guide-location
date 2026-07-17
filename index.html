@@ -142,31 +142,29 @@ footer{
 
 <ul>
 <li id="rule1">✅ Stationnez uniquement dans une rue autorisée.</li>
-<li>✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.</li>
-<li>✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.</li>
-<li>✅ Vérifiez que vous n'avez oublié aucun objet personnel.</li>
+<li id="rule2">✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.</li>
+<li id="rule3">✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.</li>
+<li id="rule4">✅ Vérifiez que vous n'avez oublié aucun objet personnel.</li>
 </ul>
 
 </div>
 
 <div class="card warning">
 
-<h2>📱 Fin de location</h2>
+<h2 id="endTitle">📱 Fin de location</h2>
 
-<p><strong>Les photos et la restitution doivent être effectuées uniquement dans l'application Getaround.</strong></p>
+<p id="endText"><strong>Les photos et la restitution doivent être effectuées uniquement dans l'application Getaround.</strong></p>
 
 </div>
 
 <div class="card">
 
-<h2>🧹 Propreté</h2>
+<h2 id="cleanTitle">🧹 Propreté</h2>
 
-<p>Merci de restituer le véhicule dans un état de propreté similaire à celui du départ.</p>
-
-<p>Un kit de nettoyage est disponible dans le coffre.</p>
+<p id="clean1">Merci de restituer le véhicule dans un état de propreté similaire à celui du départ.</p>
+<p id="clean2">Un kit de nettoyage est disponible dans le coffre.</p>
 Des stations de lavage (Kärcher / aspirateur) sont disponibles en ville et dans les communes environnantes.
-<p><strong>Une pénalité jusqu'à 70 € pourra être appliquée si le véhicule est rendu anormalement sale.</strong></p>
-
+<p id="clean3"><strong>Une pénalité jusqu'à 70 € pourra être appliquée si le véhicule est rendu anormalement sale.</strong></p>
 </div>
 
 <div class="card">
@@ -238,6 +236,10 @@ title:"Guide de restitution",
 carTitle:"🚗 Restitution du véhicule",
 beforeReturn:"<strong>Avant de terminer votre location :</strong>",
 rule1:"✅ Stationnez uniquement dans une rue autorisée."
+    document.getElementById("rule1").innerHTML = "✅ Stationnez uniquement dans une rue autorisée.";
+document.getElementById("rule2").innerHTML = "✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.";
+document.getElementById("rule3").innerHTML = "✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.";
+document.getElementById("rule4").innerHTML = "✅ Vérifiez que vous n'avez oublié aucun objet personnel.";
 },
 
 en:{
@@ -245,6 +247,10 @@ title:"Return Guide",
 carTitle:"🚗 Vehicle Return",
 beforeReturn:"<strong>Before ending your rental:</strong>",
 rule1:"✅ Park only in authorized streets."
+    document.getElementById("rule1").innerHTML = "✅ Park only in an authorized street.";
+document.getElementById("rule2").innerHTML = "✅ Never park in a private space, blue zone or prohibited area.";
+document.getElementById("rule3").innerHTML = "✅ Check that all windows are closed and the vehicle is locked.";
+document.getElementById("rule4").innerHTML = "✅ Make sure you have not forgotten any personal belongings.";
 },
 
 de:{
