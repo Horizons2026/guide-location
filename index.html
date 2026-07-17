@@ -236,10 +236,9 @@ title:"Guide de restitution",
 carTitle:"🚗 Restitution du véhicule",
 beforeReturn:"<strong>Avant de terminer votre location :</strong>",
 rule1:"✅ Stationnez uniquement dans une rue autorisée."
-    document.getElementById("rule1").innerHTML = "✅ Stationnez uniquement dans une rue autorisée.";
-document.getElementById("rule2").innerHTML = "✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.";
-document.getElementById("rule3").innerHTML = "✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.";
-document.getElementById("rule4").innerHTML = "✅ Vérifiez que vous n'avez oublié aucun objet personnel.";
+rule2:"✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.",
+rule3:"✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.",
+rule4:"✅ Vérifiez que vous n'avez oublié aucun objet personnel.",
 },
 
 en:{
@@ -247,10 +246,9 @@ title:"Return Guide",
 carTitle:"🚗 Vehicle Return",
 beforeReturn:"<strong>Before ending your rental:</strong>",
 rule1:"✅ Park only in authorized streets."
-    document.getElementById("rule1").innerHTML = "✅ Park only in an authorized street.";
-document.getElementById("rule2").innerHTML = "✅ Never park in a private space, blue zone or prohibited area.";
-document.getElementById("rule3").innerHTML = "✅ Check that all windows are closed and the vehicle is locked.";
-document.getElementById("rule4").innerHTML = "✅ Make sure you have not forgotten any personal belongings.";
+rule2:"✅ Never park in a private space, blue zone or prohibited area.",
+rule3:"✅ Check that all windows are closed and the vehicle is locked.",
+rule4:"✅ Make sure you have not forgotten any personal belongings.",
 },
 
 de:{
@@ -258,6 +256,9 @@ title:"Rückgabeanleitung",
 carTitle:"🚗 Fahrzeugrückgabe",
 beforeReturn:"<strong>Vor Beendigung Ihrer Miete:</strong>",
 rule1:"✅ Parken Sie nur in erlaubten Straßen."
+rule2:"✅ Parken Sie niemals auf einem Privatparkplatz, einer blauen Zone oder einem verbotenen Platz.",
+rule3:"✅ Vergewissern Sie sich, dass alle Fenster geschlossen und das Fahrzeug verriegelt ist.",
+rule4:"✅ Vergewissern Sie sich, dass Sie keine persönlichen Gegenstände vergessen haben.",
 },
 
 it:{
@@ -265,6 +266,9 @@ title:"Guida alla restituzione",
 carTitle:"🚗 Restituzione del veicolo",
 beforeReturn:"<strong>Prima di terminare il noleggio:</strong>",
 rule1:"✅ Parcheggiare solo nelle strade autorizzate."
+rule2:"✅ Non parcheggiare mai in un parcheggio privato, in una zona blu o in un'area vietata.",
+rule3:"✅ Verifica che tutti i finestrini siano chiusi e che il veicolo sia bloccato.",
+rule4:"✅ Assicurati di non aver dimenticato alcun oggetto personale.",
 },
 
 es:{
@@ -272,6 +276,9 @@ title:"Guía de devolución",
 carTitle:"🚗 Devolución del vehículo",
 beforeReturn:"<strong>Antes de finalizar el alquiler:</strong>",
 rule1:"✅ Aparque únicamente en calles autorizadas."
+rule2:"✅ Nunca estaciones en una plaza privada, zona azul o lugar prohibido.",
+rule3:"✅ Comprueba que todas las ventanillas estén cerradas y que el vehículo esté bloqueado.",
+rule4:"✅ Asegúrate de no haber olvidado ningún objeto personal.",
 }
 
 };
@@ -282,6 +289,9 @@ document.getElementById("title").innerHTML=texts[lang].title;
 document.getElementById("carTitle").innerHTML=texts[lang].carTitle;
 document.getElementById("beforeReturn").innerHTML=texts[lang].beforeReturn;
 document.getElementById("rule1").innerHTML=texts[lang].rule1;
+document.getElementById("rule2").innerHTML = texts[lang].rule2;
+document.getElementById("rule3").innerHTML = texts[lang].rule3;
+document.getElementById("rule4").innerHTML = texts[lang].rule4;
 
 }
 
