@@ -162,8 +162,11 @@ footer{
 <h2 id="cleanTitle">🧹 Propreté</h2>
 
 <p id="clean1">Merci de restituer le véhicule dans un état de propreté similaire à celui du départ.</p>
+
 <p id="clean2">Un kit de nettoyage est disponible dans le coffre.</p>
-Des stations de lavage (Kärcher / aspirateur) sont disponibles en ville et dans les communes environnantes.
+
+<p id="cleanStation">Des stations de lavage (Kärcher / aspirateur) sont disponibles en ville et dans les communes environnantes.</p>
+
 <p id="clean3"><strong>Une pénalité jusqu'à 70 € pourra être appliquée si le véhicule est rendu anormalement sale.</strong></p>
 </div>
 
@@ -239,6 +242,14 @@ rule1:"✅ Stationnez uniquement dans une rue autorisée.",
 rule2:"✅ Ne stationnez jamais sur une place privée, une place bleue ou un emplacement interdit.",
 rule3:"✅ Vérifiez que toutes les vitres sont bien fermées et que le véhicule est correctement verrouillé.",
 rule4:"✅ Vérifiez que vous n'avez oublié aucun objet personnel.",
+    endTitle:"📱 Fin de location",
+endText:"<strong>Les photos et la restitution doivent être effectuées uniquement dans l'application Getaround.</strong>",
+
+cleanTitle:"🧹 Propreté",
+clean1:"Merci de restituer le véhicule dans un état de propreté similaire à celui du départ.",
+clean2:"Un kit de nettoyage est disponible dans le coffre.",
+cleanStation:"Des stations de lavage (Kärcher / aspirateur) sont disponibles en ville et dans les communes environnantes.",
+clean3:"<strong>Une pénalité jusqu'à 70 € pourra être appliquée si le véhicule est rendu anormalement sale.</strong>",
 },
 
 en:{
@@ -293,6 +304,14 @@ function setLang(lang) {
     document.getElementById("rule2").innerHTML = texts[lang].rule2;
     document.getElementById("rule3").innerHTML = texts[lang].rule3;
     document.getElementById("rule4").innerHTML = texts[lang].rule4;
+    document.getElementById("endTitle").innerHTML = texts[lang].endTitle;
+document.getElementById("endText").innerHTML = texts[lang].endText;
+
+document.getElementById("cleanTitle").innerHTML = texts[lang].cleanTitle;
+document.getElementById("clean1").innerHTML = texts[lang].clean1;
+document.getElementById("clean2").innerHTML = texts[lang].clean2;
+document.getElementById("cleanStation").innerHTML = texts[lang].cleanStation;
+document.getElementById("clean3").innerHTML = texts[lang].clean3;
 
 }
 
